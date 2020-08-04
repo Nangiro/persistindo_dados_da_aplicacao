@@ -1,0 +1,27 @@
+<!DOCTYPE html> <!--Indica qual html está sendo usado -->
+
+<html>  
+  <head>
+
+    {% block head %}
+      <title>Gym Manager</title> <!--nome que fica na tab do browser-->
+    {% endblock %}
+
+    <link rel="stylesheet" href="/styles.css"> <!--Importando o styles.css-->
+  </head>
+
+  <body>
+    <header>
+      <div class="links"> <!--Divisão tem que a class links-->
+        <a href="/instructors">Instructors</a>
+        <a href="/members">Members</a>
+      </div>
+    </header>
+
+    {% block content %}{% endblock %}
+
+    <script src="/scripts.js"></script>
+
+  </body>
+
+</html>
